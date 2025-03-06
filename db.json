@@ -1,0 +1,54 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "The Mysterious Affair at Styles",
+      "author": "Agatha Christie",
+      "category": "Mystery",
+      "isbn": "9780062073983",
+      "isActive": true,
+      "createdAt": "06 March 2025, 12:53AM",
+      "editedAt": "06 March 2025, 10:24AM"
+    },
+    {
+      "id": "2",
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "category": "Science",
+      "isbn": "9780099590088",
+      "isActive": false,
+      "createdAt": "06 March 2025, 12:53AM",
+      "editedAt": "06 March 2025, 10:24AM"
+    },
+    {
+      "id": "3",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "category": "Fiction",
+      "isbn": "9780060935467",
+      "isActive": true,
+      "createdAt": "06 March 2025, 12:53AM",
+      "editedAt": "06 March 2025, 9:29AM"
+    },
+    {
+      "id": "4",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "category": "Psychology",
+      "isbn": "9780374533557",
+      "isActive": true,
+      "createdAt": "06 March 2025, 12:53AM",
+      "editedAt": "06 March 2025, 12:54AM"
+    },
+    {
+      "id": "5",
+      "title": "The Immortal Life of Henrietta Lacks",
+      "author": "Rebecca Skloot",
+      "category": "Non-fiction",
+      "isbn": "9781400052189",
+      "isActive": false,
+      "createdAt": "06 March 2025, 12:53AM",
+      "editedAt": "06 March 2025, 12:54AM"
+    }
+  ]
+}

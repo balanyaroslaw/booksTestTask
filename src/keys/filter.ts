@@ -1,0 +1,1 @@
+ export type Filter = 'Active' | 'Disactive' | 'All'
