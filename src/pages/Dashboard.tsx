@@ -12,7 +12,7 @@ import { useBooks } from '../context/book.context';
 
 function Dashboard() {
     const { books } = useBooks();
-    const [filter, setFilter] = useState<Filter>('All');
+    const [filter, setFilter] = useState<Filter>('Active');
     const [filteredBooks, setFilteredBooks] = useState<Book[]>([]);
     const {deviceType} = useDevice();
     const navigate = useNavigate();
@@ -58,7 +58,7 @@ function Dashboard() {
             <footer className={`${deviceType===Device.DESKTOP || deviceType===Device.TABLET?'fixed':''} bottom-0 left-0 w-full bg-gray-800 text-white py-4`}>
                 <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
                     <div className="flex space-x-4 mt-2 md:mt-0">
-                        <a href="https://github.com/balanyaroslaw/booksTestTask"  className="hover:underline">My Github</a>
+                        <a href="https://github.com/balanyaroslaw/booksTestTask" target="_balnk" className="hover:underline">My Github</a>
                     </div>
                 </div>
             </footer>

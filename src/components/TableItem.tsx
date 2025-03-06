@@ -37,7 +37,7 @@ function TableItem({book}:TableItemProps) {
           <td className="px-4 py-2">{book.category}</td>
           <td className="px-4 py-2">{book.isbn}</td>
           <td className="px-4 py-2">{book.createdAt}</td>
-          <td className="px-4 py-2">{book.editedAt}</td>
+          <td className="px-4 py-2">{book.editedAt?book.editedAt:'--'}</td>
           <td className="px-4 py-2 space-x-2">
             <button className="px-2 py-1 bg-blue-500 text-white rounded" onClick={()=>navigate(`editbook/${book.id}`)}>Edit</button>
             <button className="px-2 py-1 bg-red-500 text-white rounded" onClick={()=>deleteItem()}>Delete</button>
