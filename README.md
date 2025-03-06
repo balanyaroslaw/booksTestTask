@@ -18,7 +18,9 @@
 
 3. **Start JSON Server**
    - Open a second terminal and run the following command to start the JSON server:
-
+     ```bask
+     npm install -g json-server
+     ```
      ```bash
      json-server --watch db.json --port 8000
      ```
