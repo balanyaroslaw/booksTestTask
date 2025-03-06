@@ -20,7 +20,7 @@ function Dashboard() {
     useEffect(() => {
         const filtered = books.filter((book) => {
           if (filter === "Active") return book.isActive;
-          if (filter === "Disactive") return !book.isActive;
+          if (filter === "Inactive") return !book.isActive;
           return true; 
         });
       
@@ -33,7 +33,7 @@ function Dashboard() {
             <div className='max-w-full flex p-5 bg-[#efeeee] justify-around items-center'>
                 <div className="flex gap-5 items-center">
                     <Select 
-                        options={['All','Active', 'Disactive']} 
+                        options={['All','Active', 'Inactive']} 
                         onSelect={setFilter} 
                     />
                     <span>Showing {filteredBooks.length} of {books.length}</span>
@@ -55,10 +55,10 @@ function Dashboard() {
                     })}
                 </div>
             :<Table books={filteredBooks}/>}
-            <footer className={`${deviceType===Device.DESKTOP?'fixed':''} bottom-0 left-0 w-full bg-gray-800 text-white py-4`}>
+            <footer className={`${deviceType===Device.DESKTOP || deviceType===Device.TABLET?'fixed':''} bottom-0 left-0 w-full bg-gray-800 text-white py-4`}>
                 <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
                     <div className="flex space-x-4 mt-2 md:mt-0">
-                        <a href="https://github.com/balanyaroslaw/booksTestTask"  target="_blank" className="hover:underline">My Github</a>
+                        <a href="https://github.com/balanyaroslaw/booksTestTask"  className="hover:underline">My Github</a>
                     </div>
                 </div>
             </footer>
