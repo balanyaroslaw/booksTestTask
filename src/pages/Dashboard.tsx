@@ -33,7 +33,7 @@ function Dashboard() {
             <div className='max-w-full flex p-5 bg-[#efeeee] justify-around items-center'>
                 <div className="flex gap-5 items-center">
                     <Select 
-                        options={['All','Active', 'Inactive']} 
+                        options={['Active','All', 'Inactive']} 
                         onSelect={setFilter} 
                     />
                     <span>Showing {filteredBooks.length} of {books.length}</span>
